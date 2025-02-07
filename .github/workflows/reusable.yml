@@ -29,7 +29,7 @@ jobs:
       - name: List Files
         run: ls
       - name: Printing secrets
-        run: ${{ secrets.some-secret }}
+        run: echo "${{ secrets.some-secret }}"
       - name: Output Information
         run: echo "Deploying & Uploading..."
       - name: Set result output
